@@ -44,15 +44,15 @@ will be the gateway for the containers.
 
 There are various options to change the docker bridge and general docker networking,
  we will not cover them in detail here but the options include:
-.* -b or --bridge=BRIDGE (Build your own bridge)
-.* --bip=CIDR (Give the docker bridge your own CIDR address)
-.* --fixed-cidr (Limit address range)
-.* -H SOCKET --host=SOCKET (Tell the server to listen on)
-.* --icc=true|false (Enable/Disable communication between containers)
-.* --ip=IPADDRESS (Port forwards go to a single address, instead of 0.0.0.0)
-.* --ip-forward=true|false
-.* --iptables=true|false
-.* --mtu=BYTES
+- -b or --bridge=BRIDGE (Build your own bridge)
+- --bip=CIDR (Give the docker bridge your own CIDR address)
+- --fixed-cidr (Limit address range)
+- -H SOCKET --host=SOCKET (Tell the server to listen on)
+- --icc=true|false (Enable/Disable communication between containers)
+- --ip=IPADDRESS (Port forwards go to a single address, instead of 0.0.0.0)
+- --ip-forward=true|false
+- --iptables=true|false
+- --mtu=BYTES
 
 ###### NAT
 See what forwarding rules exists on your Docker-host
