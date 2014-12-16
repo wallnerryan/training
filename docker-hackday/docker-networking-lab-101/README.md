@@ -252,4 +252,6 @@ Future Networking & Docker Proposals
   - https://github.com/docker/docker/issues/8952
 - Plugins
   - https://github.com/docker/docker/pull/8968
+- Pipeworks
+  - https://github.com/jpetazzo/pipework
 
