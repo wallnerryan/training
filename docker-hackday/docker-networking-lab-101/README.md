@@ -54,10 +54,16 @@ There are various options to change the docker bridge and general docker network
 - --iptables=true|false
 - --mtu=BYTES
 
+###### The docker-engine process
+```ps ax | grep "docker -d"```
+
 ###### NAT
 See what forwarding rules exists on your Docker-host
 
 ```sudo iptables -t nat -L -n```
+```
+1293 root     /usr/local/bin/docker -d -D -g /var/lib/docker -H unix:// -H tcp://0.0.0.0:2376 --tlsverify --tlscacert=/var/lib/boot2docker/tls/ca.pem --tlscert=/var/lib/boot2docker/tls/server.pem --tlskey=/var/lib/boot2docker/tls/serverkey.pem
+```
 
 ###### V-Eth Pairs
 Every time Docker creates a container, it creates a pair of peer interfaces that are
